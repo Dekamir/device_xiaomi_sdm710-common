@@ -1,6 +1,4 @@
 //
-// Copyright (C) 2019 The LineageOS Project
-//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -14,8 +12,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "lineage.livedisplay@2.0-service.xiaomi_sdm710",
-    init_rc: ["lineage.livedisplay@2.0-service.xiaomi_sdm710.rc"],
+    name: "aicp.livedisplay@2.0-service.xiaomi_sdm710",
+    init_rc: ["aicp.livedisplay@2.0-service.xiaomi_sdm710.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -28,6 +26,6 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
+        "vendor.aicp.livedisplay@2.0",
     ],
 }
