@@ -1,6 +1,0 @@
-type shal_aicp_trust_default, coredomain, domain;
-hal_server_domain(shal_aicp_trust_default, hal_aicp_trust_server)
-
-
-# Talk to the binder device node
-allow shal_aicp_trust_default binder_device:chr_file rw_file_perms;
