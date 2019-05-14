@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (c) 2016 The CyanogenMod Project
+ *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,23 +24,21 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
 
-import org.aicp.internal.util.FileUtils;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class ProximitySensor implements SensorEventListener {
-    private static final String TAG = "PocketModeProximity";
+
     private static final boolean DEBUG = false;
+    private static final String TAG = "PocketModeProximity";
 
-    private static final String FP_PROX_NODE =
-            "/sys/devices/platform/soc/soc:fingerprint_goodix/proximity_state";
+    private static final String FP_PROX_NODE = "/sys/devices/soc/soc:fpc_fpc1020/proximity_state";
 
-    private ExecutorService mExecutorService;
-    private Context mContext;
-    private Sensor mSensor;
     private SensorManager mSensorManager;
+    private Sensor mSensor;
+    private Context mContext;
+    private ExecutorService mExecutorService;
 
     public ProximitySensor(Context context) {
         mContext = context;
