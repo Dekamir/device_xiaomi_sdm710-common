@@ -1,6 +1,4 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -26,7 +24,7 @@
 #include "SunlightEnhancement.h"
 
 namespace vendor {
-namespace lineage {
+namespace aicp {
 namespace livedisplay {
 namespace V2_0 {
 namespace implementation {
@@ -90,5 +88,5 @@ Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
 }  // namespace implementation
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace aicp
 }  // namespace vendor
