@@ -1,6 +1,3 @@
-#
-# Copyright (C) 2018-2019 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -134,6 +131,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+#Selinux
+SELINUX_IGNORE_NEVERALLOWS :=true
 
 # Inherit from the proprietary version
 #-include vendor/xiaomi/sdm710-common/BoardConfigVendor.mk
