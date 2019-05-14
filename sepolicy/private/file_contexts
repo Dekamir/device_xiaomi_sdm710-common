@@ -30,3 +30,6 @@
 
 # Trust HAL
 /system/bin/hw/aicp\.trust@1\.0-service                             u:object_r:shal_aicp_trust_default_exec:s0
+
+# Selinux
+SELINUX_IGNORE_NEVERALLOWS=true
