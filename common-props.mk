@@ -78,7 +78,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.report_codec=1 \
     ril.subscription.types=NV,RUIM \
     ro.telephony.default_network=22,22 \
-    telephony.lteOnCdmaDevice=1
+    telephony.lteOnCdmaDevice=1 \
+    telephony.lteOnCdmaDevice=1 \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=0 \
+    persist.data.iwlan.enable=true \
+    persist.dbg.wfc_avail_ovr=0
 
 # SSR
 PRODUCT_PROPERTY_OVERRIDES += \
