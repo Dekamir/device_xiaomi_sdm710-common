@@ -1,6 +1,4 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,7 +12,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lineage.livedisplay@2.0-service.xiaomi_sdm710"
+#define LOG_TAG "aicp.livedisplay@2.0-service.xiaomi_sdm710"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -28,8 +26,8 @@ using android::status_t;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_0::implementation::SunlightEnhancement;
+using ::vendor::aicp::livedisplay::V2_0::ISunlightEnhancement;
+using ::vendor::aicp::livedisplay::V2_0::implementation::SunlightEnhancement;
 
 int main() {
     sp<SunlightEnhancement> sunlightEnhancement;
