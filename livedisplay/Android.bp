@@ -13,7 +13,7 @@
 
 cc_binary {
     name: "aicp.livedisplay@2.0-service.xiaomi_sdm710",
-    init_rc: ["aicp.livedisplay@2.0-service.xiaomi_sdm710.rc"],
+    init_rc: "aicp.livedisplay@2.0-service.xiaomi_sdm710.rc",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
