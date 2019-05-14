@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.pocketmode;
+package org.aicp.pocketmode;
 
 import android.util.Log;
 
