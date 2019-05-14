@@ -29,4 +29,4 @@
 /system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
 
 # Trust HAL
-/system/bin/hw/aicp\.trust@1\.0-service                             u:object_r:shal_lineage_trust_default_exec:s0
+/system/bin/hw/aicp\.trust@1\.0-service                             u:object_r:shal_aicp_trust_default_exec:s0
