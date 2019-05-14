@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -80,7 +78,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 # PRODUCT_PACKAGES += \
-#    lineage.livedisplay@2.0-service-sdm
+#    aicp.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -128,7 +126,7 @@ PRODUCT_PACKAGES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+    aicp.trust@1.0-service
 
 # VNDK-SP
 PRODUCT_PACKAGES += \
