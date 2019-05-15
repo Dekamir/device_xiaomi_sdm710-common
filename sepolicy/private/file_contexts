@@ -24,5 +24,3 @@
 # Power HAL
 /system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
 
-# Selinux
-SELINUX_IGNORE_NEVERALLOWS=true
