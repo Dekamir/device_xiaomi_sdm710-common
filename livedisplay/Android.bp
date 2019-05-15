@@ -28,6 +28,6 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
+        "vendor.lineage.livedisplay@2.0-service.xiaomi_sdm710",
     ],
 }
