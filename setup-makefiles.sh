@@ -13,7 +13,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 Bootleggers_ROOT="$MY_DIR"/../../..
 
-HELPER="$Bootleggers_ROOT"/vendor/bootleg/build/tools/extract_utils.sh
+HELPER="$BOOTLEGGERS_ROOT"/vendor/bootleg/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -21,7 +21,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for common
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$Bootleggers_ROOT" true
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$BOOTLEGGERS_ROOT" true
 
 # Copyright headers and guards
 write_headers "sirius"
@@ -35,7 +35,7 @@ write_footers
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$Bootleggers_ROOT" false
+    setup_vendor "$DEVICE" "$VENDOR" "$BOOTLEGGERS_ROOT" false
 
     # Copyright headers and guards
     write_headers
