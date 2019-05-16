@@ -45,6 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.preview.ubwc=0 \
     persist.camera.video.ubwc=0 \
     persist.camera.gyro.disable=0 \
+    persist.camera.eis.enable=1 \
     ro.persist.qcapb=1 \
     camera.disable_zsl_mode=true \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
