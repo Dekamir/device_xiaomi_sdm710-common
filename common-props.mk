@@ -182,6 +182,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+# Color temperature
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.colorpick_adjust=true
+
+# Support night mode 2.0
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.eyecare.brightness.threshold=3 \
+    ro.eyecare.brightness.level=8 \
+    ro.hist.brightness.threshold=3
+
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
