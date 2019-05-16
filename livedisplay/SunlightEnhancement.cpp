@@ -28,7 +28,7 @@
 namespace vendor {
 namespace bootleg {
 namespace livedisplay {
-namespace V2_0 {
+namespace V2.0 {
 namespace implementation {
 
 static constexpr const char* kDispParamPath =
@@ -88,7 +88,7 @@ Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
 }
 
 }  // namespace implementation
-}  // namespace V2_0
+}  // namespace V2.0
 }  // namespace livedisplay
 }  // namespace bootleg
 }  // namespace vendor
