@@ -28,8 +28,8 @@ using android::status_t;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using ::vendor::bootleg::livedisplay::V2_0::ISunlightEnhancement;
-using ::vendor::bootleg::livedisplay::V2_0::implementation::SunlightEnhancement;
+using ::vendor::bootleg::livedisplay::V2.0::ISunlightEnhancement;
+using ::vendor::bootleg::livedisplay::V2.0::implementation::SunlightEnhancement;
 
 int main() {
     sp<SunlightEnhancement> sunlightEnhancement;
