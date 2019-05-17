@@ -67,7 +67,8 @@ static inline const char *BtmGetDefaultName()
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
 // Skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
+#define BT_CLEAN_TURN_ON_DISABLED TRUE
+#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 // Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec
 #define AVDT_NUM_SEPS 12
 #endif
