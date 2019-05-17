@@ -48,9 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.eis.enable=1 \
     persist.vendor.camera.eis.enable=1 \
     persist.camera.HAL3.enabled=1 \
-    persist.vendor.camera.HAL3.enabled 1 \
-    persist.camera.stats.test 5 \
-    persist.vendor.camera.stats.test 5 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.camera.stats.test=5 \
+    persist.vendor.camera.stats.test=5 \
     ro.persist.qcapb=1 \
     camera.disable_zsl_mode=true \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
@@ -136,7 +136,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     persist.vendor.radio.atfwd.start=true \
-    persist.vendor.radio.flexmap_type=none \
+    persist.vendor.radio.flexmap_type=dds \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.report_codec=1 \
