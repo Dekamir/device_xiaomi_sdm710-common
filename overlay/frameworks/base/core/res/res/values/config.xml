@@ -370,4 +370,4 @@
 
     <!-- Auto-brightness during doze -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
-/resources>
+</resources>
