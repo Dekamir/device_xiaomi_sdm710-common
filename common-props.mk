@@ -187,9 +187,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Support night mode 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.eyecare.brightness.threshold=3 \
+    ro.eyecare.brightness.threshold=15 \
     ro.eyecare.brightness.level=8 \
-    ro.hist.brightness.threshold=3
+    ro.hist.brightness.threshold=7
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
