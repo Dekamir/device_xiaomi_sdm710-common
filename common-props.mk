@@ -40,6 +40,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.sap=true \
     vendor.bluetooth.soc=cherokee
 
+# set maximum supported adapter voltage
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.chg.max_volt_mv=9000
+
+# set cutoff voltage to 3400mV
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cutoff_voltage_mv=3400
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.preview.ubwc=0 \
@@ -127,6 +135,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.iop.enable_uxe=0 \
     ro.vendor.qti.sys.fw.bg_apps_limit=60
 
+# prop for amoled panel
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.display.type=oled
+
+# Property for display feature histogram
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.displayfeature.histogram.enable=false
+
+# system property for displayfeature hidl
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.displayfeature_hidl=true
+
+# system property for HBM mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.displayfeature.hbm.enable=true
+
+# disable display default color mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=0
+
 # RCS and IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=0 \
@@ -184,6 +212,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Color temperature
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.colorpick_adjust=true
+
+# Support night mode 2.0
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.eyecare.brightness.threshold=3 \
+    ro.eyecare.brightness.level=8 \
+    ro.hist.brightness.threshold=3
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
