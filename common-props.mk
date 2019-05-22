@@ -209,10 +209,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.colorpick_adjust=true
 
-# Support night mode 2.0
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hist.brightness.threshold=1
-
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
