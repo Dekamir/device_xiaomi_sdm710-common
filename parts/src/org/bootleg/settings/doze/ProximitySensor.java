@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.havoc.settings.doze;
+package org.bootleg.settings.doze;
 
 import android.content.Context;
 import android.hardware.Sensor;
