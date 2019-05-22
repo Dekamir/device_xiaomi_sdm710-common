@@ -139,10 +139,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.display.type=oled
 
-# Property for display feature histogram
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=false
-
 # system property for displayfeature hidl
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.displayfeature_hidl=true
@@ -215,9 +211,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Support night mode 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.eyecare.brightness.threshold=3 \
-    ro.eyecare.brightness.level=8 \
-    ro.hist.brightness.threshold=3
+    ro.hist.brightness.threshold=1
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
