@@ -369,7 +369,7 @@
     <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.havoc.settings.doze/org.havoc.settings.doze.DozeSettingsActivity</string>
+    <string name="config_customDozePackage">org.bootleg.settings.doze/org.bootleg.settings.doze.DozeSettingsActivity</string>
 
     <!-- Auto-brightness during doze -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
