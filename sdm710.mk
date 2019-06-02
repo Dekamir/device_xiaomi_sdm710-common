@@ -30,8 +30,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
 # Camera
-# PRODUCT_PACKAGES += \
-#     Snap
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    camera.msm8996 \
+    mm-qcamera-app \
+    Snap \
+    libmm-qcamera
 
 # Common init scripts
 PRODUCT_PACKAGES += \
