@@ -7,8 +7,8 @@ lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # Camera
-vendor/lib/camera.qcom.so
-vendor/lib/com.qti.chi.override.so
+vendor/lib/camera.qcom.so:lib/camera.qcom.so
+vendor/lib/com.qti.chi.override.so:lib/com.qti.chi.override.so
 
 # CNE
 etc/permissions/cneapiclient.xml
