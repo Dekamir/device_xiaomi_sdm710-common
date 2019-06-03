@@ -5,6 +5,8 @@ BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sdm710-common
 
+TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
