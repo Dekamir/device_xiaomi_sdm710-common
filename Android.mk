@@ -11,6 +11,9 @@ include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
+include $(PRODUCT_OUT)/gen.img: my/src/path/gen.sh
+	export PRODUCT_OUT=$$(cd $(PRODUCT_OUT); pwd); cd my/src/path; ./gen.sh -o $${PRODUCT_OUT}/gen.img
+
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
 FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
